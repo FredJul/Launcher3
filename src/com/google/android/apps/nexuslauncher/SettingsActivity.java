@@ -15,11 +15,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.preference.SwitchPreference;
 import android.preference.TwoStatePreference;
 import android.text.TextUtils;
 import android.util.Log;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.android.launcher3.R;
+import com.android.launcher3.Utilities;
 
 public class SettingsActivity extends com.android.launcher3.SettingsActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
     public final static String ICON_PACK_PREF = "pref_icon_pack";
@@ -106,6 +110,12 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
         public void onResume() {
             super.onResume();
             mIconPackPref.reloadIconPacks();
+
+            SwitchPreference minusOne = (SwitchPreference) findPreference(ENABLE_MINUS_ONE_PREF);
+            if (minusOne != null) {
+                minusOne.setChecked(Utilities.getPrefs(getActivity())
+                        .getBoolean(ENABLE_MINUS_ONE_PREF, true));
+            }
         }
 
         @Override
@@ -140,6 +150,19 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                     break;
             }
             return false;
+        }
+    }
+
+    public static class OpenSourceLicensesFragment extends DialogFragment {
+        public Dialog onCreateDialog(Bundle bundle) {
+            WebView view = new WebView(getActivity());
+            view.setWebViewClient(new WebViewClient());
+            view.getSettings().setBuiltInZoomControls(true);
+            view.loadUrl("file:///android_asset/license.html");
+            return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.pref_open_source_licenses_title)
+                    .setView(view)
+                    .create();
         }
     }
 

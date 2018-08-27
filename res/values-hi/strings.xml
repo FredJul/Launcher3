@@ -151,4 +151,18 @@
   <string name="hide_app">एप्लिकेशन छुपाएँ</string>
     <string name="icon_shape_rounded_square">गोल कोने वाला वर्ग</string>
     <string name="smartspace_hours_mins">%1$s घंटे %2$s मिनट</string>
+    <string name="icon_shape_cylinder">सिलेंडर</string>
+    <string name="theme_title">विषय</string>
+    <string name="theme_automatic">स्वचालित</string>
+    <string name="theme_default">चूक</string>
+    <string name="theme_light">रोशनी</string>
+    <string name="theme_dark">अंधेरा</string>
+    <string name="theme_transparent">पारदर्शक</string>
+    <string name="pref_open_source_licenses_title">ओपन सोर्स लाइसेंस</string>
+    <string name="about_donate">दान करना</string>
+    <string name="bridge_missing_message">
+        गुगल सुची से सपर्क करने वाला सेतु अनुपलब्ध है,
+        या फिर अपडेटेड नहीं है। क्या आप लेटेस्ट वर्जन इंस्टाल करना चाहते है?
+    </string>
+    <string name="bridge_install">इंस्टाल</string>
 </resources>

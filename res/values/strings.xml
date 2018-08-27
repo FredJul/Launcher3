@@ -202,6 +202,8 @@
     <string name="icon_shape_circle">Circle</string>
     <!-- Option to change the shape of the home screen icons to a teardrop. This represents the name of the shape similar to a circle with with the bottom right corner pushed out like a square [CHAR LIMIT=50] -->
     <string name="icon_shape_teardrop">Teardrop</string>
+    <!-- Option to change the shape of the home screen icons to a cylinder. [CHAR LIMIT=50] -->
+    <string name="icon_shape_cylinder">Cylinder</string>
 
     <!-- Message shown in the progress dialog when the icon shape override is being applied [CHAR LIMIT=100]-->
     <string name="icon_shape_override_progress">Applying icon shape changes</string>
@@ -333,7 +335,8 @@
     <string name="title_app_suggestions">Display app suggestions</string>
     <string name="summary_app_suggestions">At the top of your All Apps list</string>
     <string name="about_app_version">Version</string>
-    <string name="app_releases_url">https://github.com/amirzaidi/launcher3/releases</string>
+    <string name="app_releases_url">https://play.google.com/store/apps/details?id=amirz.rootless.nexuslauncher</string>
+    <string name="app_donate_url">https://play.google.com/store/apps/details?id=amirz.donation</string>
     <string name="app_name_pixel_launcher">Pix Launcher</string>
     <string name="title_disable_suggestions_prompt">Turn off app suggestions?</string>
     <string name="msg_disable_suggestions_prompt">"Suggestions won't appear at the top of your apps list, and the usage data used to create them will be permanently erased."</string>
@@ -344,4 +347,23 @@
     <string name="icon_shape_rounded_square">Rounded square</string>
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="action_preferences">@string/smartspace_preferences</string>
+
+    <!-- Theme selection -->
+    <string name="theme_title">Theme</string>
+    <string name="theme_automatic">Automatic</string>
+    <string name="theme_default">Default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_transparent">Transparent</string>
+    <string name="pref_open_source_licenses_title">Open source licenses</string>
+
+    <!-- Custom -->
+    <string name="app_name_rootless_pixel_launcher">Rootless Pixel Launcher</string>
+    <string name="about_donate">Donate</string>
+    <string name="bridge_missing_title">Rootless Pixel Bridge</string>
+    <string name="bridge_missing_message">
+        The bridge to connect to the Google Feed could not be found,
+        or needs to be updated. Do you want to install the latest version?
+    </string>
+    <string name="bridge_install">Install</string>
 </resources>
