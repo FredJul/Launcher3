@@ -28,7 +28,7 @@ public final class FeatureFlags extends BaseFlags {
     public static final boolean LAUNCHER3_BACKPORT_SHORTCUTS = true;
 
     // Feature flag to enable moving the QSB on the 0th screen of the workspace.
-    public static boolean QSB_ON_FIRST_SCREEN = true;
+    public static boolean QSB_ON_FIRST_SCREEN = false;
 
     private FeatureFlags() {}
 }

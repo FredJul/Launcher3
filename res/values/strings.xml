@@ -358,7 +358,7 @@
     <string name="pref_open_source_licenses_title">Open source licenses</string>
 
     <!-- Custom -->
-    <string name="app_name_rootless_pixel_launcher">Rootless Pixel Launcher</string>
+    <string name="app_name_rootless_pixel_launcher">Pix Launcher</string>
     <string name="about_donate">Donate</string>
     <string name="bridge_missing_title">Rootless Pixel Bridge</string>
     <string name="bridge_missing_message">

@@ -25,7 +25,7 @@ import com.google.android.libraries.launcherclient.ILauncherOverlayCallback;
 import java.lang.ref.WeakReference;
 
 public class LauncherClient {
-    public final static boolean BRIDGE_USE = true;
+    public final static boolean BRIDGE_USE = false;
     public final static String BRIDGE_PACKAGE = "com.google.android.apps.nexuslauncher";
 
     private static int apiVersion = -1;
